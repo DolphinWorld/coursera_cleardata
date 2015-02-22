@@ -1,8 +1,8 @@
-
-
+#load zip file and extract to data folder
 download.file(fileURL, localZipFile, method='curl')
 unzip(localZipFile, exdir=dataRootFolder)
 
+#read raw files
 features <- read.table(paste(rootFolder, "/features.txt", sep=""), header=FALSE)
 activities <- read.table(paste(rootFolder, "/activity_labels.txt", sep=""), header=FALSE)
 yTrain <- read.table(paste(rootFolder, '/train/y_train.txt', sep=""), header=FALSE)
