@@ -1,4 +1,4 @@
-** Cookbook
+# Cookbook
 
 features - data frame which contains variables which are monitored
 
